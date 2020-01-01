@@ -17,6 +17,11 @@
     "require": {
         "mild/framework": "dev-master"
     },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
