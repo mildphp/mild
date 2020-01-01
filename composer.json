@@ -22,11 +22,11 @@
         "optimize-autoloader": true,
         "preferred-install": "dist"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
