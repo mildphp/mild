@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "mild/framework": "dev-master"
+        "mild/framework": "^1.0"
     },
     "config": {
         "sort-packages": true,
