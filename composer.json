@@ -1,0 +1,22 @@
+{
+    "name" : "mild/mild",
+    "type": "project",
+    "description" : "The Mild PHP framework",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name" : "Mochammad Riyadh Ilham Akbar Pasya",
+            "email" : "ilhampasya920@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4": {
+            "App\\"  : "app/"
+        }
+    },
+    "require": {
+        "mild/framework": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @switch ($level)
+        @case(\Psr\Log\LogLevel::ERROR)
+        @case(\Psr\Log\LogLevel::ALERT)
+        @case(\Psr\Log\LogLevel::CRITICAL)
+        @case(\Psr\Log\LogLevel::EMERGENCY)
+            @php($color = 'red')
+        @break
+        @case(\Psr\Log\LogLevel::WARNING)
+            @php($color = '#ffd700')
+        @break
+        @default
+            @php($color = 'blue')
+        @break
+    @endswitch
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #c0c0c0;
+            padding: 8px;
+        }
+        td {
+            text-align: left;
+        }
+        th {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <th class="text-center" colspan=2 bgcolor={{ $color }}>{{ $level }}</th>
+    <tr>
+        <td>Channel</td>
+        <td>{{ $channel }}</td>
+    </tr>
+    <tr>
+        <td>Message</td>
+        <td>{{ $message }}</td>
+    </tr>
+    <tr>
+        <td>Context</td>
+        <td>{{ $context }}</td>
+    </tr>
+    <tr>
+        <td>IP Address</td>
+        <td>{{ request()->ip() }}</td>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td>{{ (new DateTime)->format('r') }}</td>
+    </tr>
+</table>
+</body>
+</html>

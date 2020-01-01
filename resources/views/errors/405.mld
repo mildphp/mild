@@ -1,0 +1,3 @@
+@extends('layouts.app')
+@section('title', 'Method Not Allowed')
+@section('message', '405')

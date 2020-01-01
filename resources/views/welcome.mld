@@ -1,0 +1,10 @@
+@extends('layouts.app')
+@section('js')
+    <script type="text/javascript">
+        fetch(`{{ route('welcome.api') }}`).then(function (response) {
+            return response.json()
+        }).then(function (response) {
+            document.querySelector('.message').textContent = response.content
+        })
+    </script>
+@endsection
