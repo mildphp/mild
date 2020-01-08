@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "mild/framework": "^1.1"
+        "mild/framework": "^1.2"
     },
     "config": {
         "sort-packages": true,
