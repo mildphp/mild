@@ -3,8 +3,6 @@
 namespace App\Providers;
 
 use Mild\Support\ServiceProvider;
-use Mild\Support\Events\LocaleUpdated;
-use Mild\Contract\Event\EventDispatcherInterface;
 
 class AppServiceProvider extends ServiceProvider
 {

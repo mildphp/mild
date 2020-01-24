@@ -17,16 +17,16 @@ return [
         \Mild\Mail\MailServiceProvider::class,
         \Mild\Http\HttpServiceProvider::class,
         \Mild\Cache\CacheServiceProvider::class,
-        \App\Providers\AppServiceProvider::class,
         \Mild\Cookie\CookieServiceProvider::class,
-        \App\Providers\EventServiceProvider::class,
-        \App\Providers\RouteServiceProvider::class,
         \Mild\Session\SessionServiceProvider::class,
         \Mild\Hashing\HashingServiceProvider::class,
         \Mild\Database\DatabaseServiceProvider::class,
         \Mild\Validation\ValidationServiceProvider::class,
         \Mild\Encryption\EncryptionServiceProvider::class,
-        \Mild\Translation\TranslationServiceProvider::class
+        \Mild\Translation\TranslationServiceProvider::class,
+        \App\Providers\AppServiceProvider::class,
+        \App\Providers\RouteServiceProvider::class,
+        \App\Providers\EventServiceProvider::class,
     ],
 
     'aliases' => [
