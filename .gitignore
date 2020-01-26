@@ -14,4 +14,4 @@
 /.phpunit.result.cache
 /npm-debug.log
 /yarn-error.log
-/.package-lock.json
+/package-lock.json
