@@ -19,6 +19,7 @@ return [
     'digits_between' => 'Bidang {attribute} harus antara {min} dan {max}.',
     'distinct' => 'Bidang {attribute} memiliki nilai duplikat.',
     'email' => 'Bidang {attribute} harus berupa email yang valid.',
+    'exists' => 'Bidang {attribute} tidak di temukan.',
     'file' => 'Bidang {attribute} harus berupa file.',
     'image' => 'Bidang {attribute} harus berupa gambar.',
     'integer' => 'Bidang {attribute} harus berupa bilangan bulat.',
